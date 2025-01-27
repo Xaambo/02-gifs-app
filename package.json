@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:deploy": "del-cli docs && ng build --base-href ./ && copyfiles dist/gifs-app/browser/* docs -f",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
